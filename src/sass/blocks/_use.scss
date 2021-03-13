@@ -1,0 +1,73 @@
+.use {
+    position: relative;
+    padding: 120px 0 120px 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bg_use.jpg') no-repeat center/cover;
+    
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        @include circle;
+        z-index: 1;
+        color: rgba(255, 255, 255, .9);
+        &:before {
+            z-index: -1;
+            left: 50%;
+            transform: translatex(-50%);
+        }
+
+    }
+    &__title {
+        text-align: center;
+        margin-top: 6px;
+        color: rgba(255, 255, 255, .9);
+    }
+    &__divider {
+        margin: 25px auto 0;
+    }
+    &__wrapper {
+        position: relative;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(auto, 270px));
+        grid-template-rows: repeat(2, minmax(auto, 300px));
+        column-gap: 13px;
+        row-gap: 13px;
+    }
+    &__item {
+        box-sizing: border-box;
+        padding: 28px;
+        border: 2px solid;
+        border-radius: 40px;
+        background-color: rgba(255, 255, 255, .6);
+    }
+    &__img {
+        margin: 0 auto;
+        width: 100px;
+        height: 80px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__name {
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__hr {
+        margin: 10px auto 0;
+        background-color: rgba(0, 0, 0, .5\6);
+        width: 70px;
+        height: 2px;
+    }
+    &__descr {
+        margin-top: 15px;
+        @include font (13px, 500);
+        line-height: 18px;
+        max-width: 212px;
+        max-height: 94px;
+        text-align: center;
+    }
+}

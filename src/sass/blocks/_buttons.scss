@@ -1,0 +1,12 @@
+.btn {
+    @include font (14px, 700, none, center);
+    line-height: 14px;
+    border: 1px solid $main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 12px 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}

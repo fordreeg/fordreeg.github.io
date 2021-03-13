@@ -1,0 +1,30 @@
+.policy {
+    background-color: #eee;
+    padding-top: 50px;
+    &__wrapper {
+        margin: 0 auto;
+        padding: 30px 30px;
+        width: 55%;
+        background-color: #fff;
+        border-radius: 10px;
+        
+    }
+    &__border {
+        border: 3px solid rgba(175, 167, 167, .2);
+        padding: 15px 15px;
+    }
+    h1 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        margin: 20px 0 20px 0;
+        padding: 0 20px 0 40px;
+        line-height: 30px;
+        font-size: 13px;
+    }
+}

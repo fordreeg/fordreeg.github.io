@@ -1,0 +1,48 @@
+.projects {
+    padding-top: 120px;
+    filter: brightness(90%);
+    background-color: #fff;
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        @include circle;
+        &:before {
+            left: 50%;
+            transform: translatex(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-top: 6px;
+    }
+    &__divider {
+        margin: 25px auto 0;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(auto, 280px));
+        grid-template-rows: repeat(2, minmax(auto, 280px));
+        grid-auto-rows: minmax(auto, 280px);
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+    &__item {
+        display: block;
+        width: 280px;
+        height: 280px;
+        filter: brightness(60%);
+        transition: filter .3s;
+        &:hover {
+            filter: none;
+        }
+        &-plans {
+            grid-row: 1 / 3;
+            grid-column: 4 / 5;
+        }
+        &-mac {
+            grid-row: 2 / 3;
+            grid-column: 2 / 4;
+        }
+    }
+}
