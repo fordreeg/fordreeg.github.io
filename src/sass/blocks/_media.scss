@@ -1,3 +1,17 @@
+@media (min-width: 1441px) {
+    .about {
+        &__item {
+            &-head {
+                &_top {
+                    padding: 40px 0 0 100px;
+                }
+                &_bottom {
+                    padding: 40px 0 0 100px;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1440px) {
     .promo {
         &__side-panel {
@@ -10,6 +24,16 @@
         }
         &__descr {
             width: 490px;
+        }
+        &__item {
+            &-head {
+                &_top {
+                    padding: 20px 0 0 100px;
+                }
+                &_bottom {
+                    padding: 40px 0 0 100px;
+                }
+            }
         }
     }
     .use {
@@ -58,6 +82,16 @@
         &__img {
             width: 380px;
             height: 535px;
+        }
+        &__item {
+            &-head {
+                &_top {
+                    padding: 20px 0 0 100px;
+                }
+                &_bottom {
+                    padding: 40px 0 0 100px;
+                }
+            }
         }
     }
     .contact {
@@ -142,6 +176,17 @@
         &__subtitle {
             padding: 14px 0 0 12px;
             line-height: 1px;
+        }
+        &__item {
+            &-head {
+                padding: 15px 0 0 100px;
+                &_top {
+                    padding: 40px 0 0 100px;
+                }
+                &_bottom {
+                    padding: 40px 0 0 100px;
+                }
+            }
         }
         &__divider {
             margin-top: 15px;
@@ -242,6 +287,12 @@
         &__item {
             &-head {
                 padding: 15px 0 0 100px;
+                &_top {
+                    padding: 47px 0 0 100px;
+                }
+                &_bottom {
+                    padding: 20px 0 0 100px;
+                }
             }
             &-icon {
                 top: 36%;
@@ -316,6 +367,14 @@
         &__item {
             &-location {
                 font-size: 13px;
+            }
+            &-head {
+                &_top {
+                    padding: 15px 0 0 100px;
+                }
+                &_bottom {
+                    padding: 20px 0 0 100px;
+                }
             }
         }
     }
