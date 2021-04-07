@@ -19,8 +19,7 @@
         display: block;
         width: 30px;
         height: 3px;
-        filter: brightness(90%);
-        background-color: #fff;
+        background-color: #f5f3f3;
         &_long {
             transition: width .2s;
         }
@@ -61,7 +60,6 @@
         z-index: 11;
         width: 345px;
         background-color: $main-color;
-        filter: brightness(90%);
         height: 100%;
         transition: all .6s;
     }
@@ -89,9 +87,9 @@
                 content: '';
                 position: absolute;
                 left: -35px;
-                width: 15px;
-                height: 15px;
-                border: 1px solid $text-color;
+                width: 10px;
+                height: 10px;
+                background-color: black;
                 border-radius: 100%;
                 transition: .3s;
 
@@ -127,6 +125,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, .7);
+        background-color: rgba(0, 0, 0, .85);
     }
 }

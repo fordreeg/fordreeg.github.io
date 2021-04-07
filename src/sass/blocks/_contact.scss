@@ -1,7 +1,8 @@
 .contact {
     padding: 120px 0 92px 0;
-    filter: brightness(90%);
-    background-color: #fff;
+    background-color: #f5f3f3;
+    position: relative;
+    z-index: 1;
     &__subtitle {
         position: relative;
         padding-left: 12px;
@@ -16,8 +17,29 @@
         margin-top: 4px;
     }
     &__round {
-        width: 400px;
-        height: 600px;
+        width: 335px;
+        height: 490px;
+        position: relative;
+        &:before {
+            z-index: -1;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+        }
+        &:after {
+            z-index: -1;
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+        }
         img {
             border-radius: 5px;
             width: 100%;
@@ -26,18 +48,21 @@
         }
     }
     &__wrapper {
+        justify-content: center;
         padding: 0 35px 0 52px;
         display: grid;
-        grid-template-columns: minmax(auto, 400px) minmax(auto, 580px);
-        column-gap: 70px;
+        grid-template-columns: minmax(auto,345px) minmax(auto,580px);
+        column-gap: 30px;
     }
     &__feedback {
         margin-top: 20px;
         @include font (14px, 700);
         line-height: 21px;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
     }
     &__social {
         margin-top: 20px;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
         &-icon {
             display: inline-block;
             margin-right: 20px;
@@ -81,7 +106,7 @@
             left: 12px;
             margin-bottom: 0;
             height: 18px;
-            background-color: #fff;
+            background-color: #f5f3f3;
             @include font (12px, 500);
         }
     }
@@ -93,6 +118,11 @@
             padding: 0 20px;
             @include font (12px, 500);
             line-height: 18px;
+            border: 1px solid ;
+            background-color: #f5f3f3;
+            &:focus {
+                outline: none;
+            }
         }
     }
     &__textarea {
@@ -103,21 +133,26 @@
         display: block;
         width: 100%;
         height: 100%;
+        border: 1px solid;
         resize: none;
         padding: 15px 20px;
+        background-color: #f5f3f3;
+        &:focus {
+            outline: none;
+        }
     }
     &__btn {
         border: none;
         border: 1px solid $main-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         background-color: transparent;
+        transition: background-color .3s, color .3s;
         &:focus {
             outline: none;
         }
         &:hover {
             background-color: $main-color;
             color: black;
-            box-shadow: inset 0 0 10px -3px #976912;
         }
     }
     &__triggers {
@@ -131,8 +166,10 @@
         line-height: 18px;
         display: flex;
         align-items: center;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
         input {
             margin-right: 10px;
+            margin-bottom: 2px;
         }
         
     }

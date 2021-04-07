@@ -42,37 +42,15 @@
             grid-template-columns: repeat(auto-fill,minmax(auto,270px));
         }
     }
-    .projects {
-        &__wrapper {
-            grid-template-columns: repeat(auto-fill,minmax(auto,280px));
-            justify-content: center;
-        }
-        &__item {
-            &-mac {
-                grid-row: unset;
-                grid-column: unset;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-            &-plans {
-                grid-row: unset;
-                grid-column: unset;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
     .contact {
         &__input {
             input {
                 width: 99%;
             }
+        }
+        &__round {
+            width: 310px;
+            height: 430px;
         }
     }
 }
@@ -168,7 +146,7 @@
         &__column {
             margin-top: 25px;
             transform: translateX(-366px);
-            width: 756px;
+            width: 700px;
         }
         &__title {
             margin-top: 20px;
@@ -192,8 +170,8 @@
             margin-top: 15px;
         }
         &__img {
-            width: 336px;
-            height: 450px;
+            width: 285px;
+            height: 390px;
         }
         &__descr {
             width: 315px;
@@ -209,6 +187,10 @@
     }
     .use {
         padding: 60px 0;
+        &__wrapper {
+            grid-template-columns: repeat(auto-fill,minmax(auto,250px));
+            grid-template-rows: repeat(2,minmax(auto,275px));
+        }
     }
     .contact {
         padding: 60px 0;
@@ -276,7 +258,10 @@
         }
         &__descr {
             margin-top: 40px;
-        width: 380px;
+            width: 380px;
+        }
+        &__text {
+            text-align: justify;
         }
         &__column {
             padding: 0;
@@ -331,14 +316,14 @@
     }
     .about {
         &__img {
-            width: 300px;
-            height: 260px;
+            width: 230px;
+            height: 200px;
         }
         &__descr {
             width: 300px;
         }
         &__text {
-            text-align: center;
+            text-align: justify;
         }
         &__title {
             text-align: center;
@@ -387,7 +372,6 @@
     .projects {
         &__wrapper {
             margin-top: 45px;
-            row-gap: 10px;
         }
     }
     .contact {

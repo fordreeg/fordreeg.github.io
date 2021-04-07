@@ -1,10 +1,11 @@
 .about {
-    padding: 120px 0 120px 0;
-    filter: brightness(90%);
-    background-color: #fff;
+    padding: 120px 0 50px 0;
+    background-color: #f5f3f3;
+    position: relative;
+    z-index: 1;
     &__wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     &__descr {
         display: flex;
@@ -12,22 +13,45 @@
         width: 670px;
     }
     &__img {
-        width: 400px;
-        height: 600px;
+        width: 370px;
+        height: 535px;
+        position: relative;
+        &:before {
+            z-index: -1;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+        }
+        &:after {
+            z-index: -1;
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+        }
         &-photo {
             width: 100%;
             height: 100%;
-            border-radius: 5px;
             object-fit: cover;
         }
     }
     &__subtitle {
         position: relative;
         padding: 2px 0 0 12px;
+        z-index: 1;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
         @include circle;
     }
     &__title {
         margin-top: 6px;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
     }
     &__divider {
         margin-top: 4px;
@@ -36,6 +60,7 @@
         margin-top: 24px;
         @include font (14px, 500);
         line-height: 24px;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
     }
     &__header {
         font-weight: 700;
@@ -45,12 +70,14 @@
         position: relative;
         font-size: 25px;
         padding: 10px 0 0 15px;
+        @include circle;
         &_left {
             padding-left: 20px
         }
-        @include circle;
+        
         &:before {
             top: 0;
+            
         }
     }
     &__column {
@@ -59,6 +86,7 @@
         &-title {
             position: relative;
             padding-left: 35px;
+            text-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
             &::before {
                 position: absolute; 
                 left: -7px;
@@ -121,10 +149,12 @@
         &-location {
             font-size: 12px;
             line-height: 18px;
+            text-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
         }
         &-body {
             @include font (12px, 500);
             line-height: 18px;
+            text-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
         }
     }
 }
