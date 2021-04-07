@@ -314,7 +314,7 @@
                         Или оставьте ваши данные и я сам вам напишу:
                     </p>
 
-                    <form action="#" class="contact__form">
+                    <form enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')" id="form" class="contact__form">
                         <div class="contact__input">
                             <label for="name">Ваше имя</label>
                             <input id="name" required type="text" name="name">
@@ -324,8 +324,8 @@
                             <input id="mail" required type="email" name="mail">
                         </div>
                         <div class="contact__textarea">
-                            <label for="message">Ваше сообщение</label>
-                            <textarea id="message" name="message" class="contact__message"></textarea>  
+                            <label required for="message">Ваше сообщение</label>
+                            <textarea id="message" required name="message" class="contact__message"></textarea>  
                         </div>
                         <div class="contact__triggers">
                             <button class="btn contact__btn">
@@ -340,6 +340,19 @@
                         </div>
                         
                     </form>
+
+                    <div class="overlay">
+    
+                        <div class="modal">
+                            <div class="modal__close">&times;</div>
+                            <span class="modal__check">
+                                <div class="modal__check-circle"></div>
+                                <div class="modal__check-stem"></div>
+                                <div class="modal__check-kick"></div>
+                            </span>
+                            <div class="modal__subtitle">Сообщение отправлено!</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
