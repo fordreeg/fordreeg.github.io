@@ -1,11 +1,9 @@
 @import 'libs/bootstrap-reboot.min';
-@import 'libs/fonts';
-
-@import 'base/variables';
-@import 'base/mixins';
+@import "http://fonts.fontstorage.com/import/lato.css";
+@import 'blocks/templates';
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -30,26 +28,26 @@ p {
 }
 
 .container {
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 @media (max-width: 1440px) {
     .container {
-        max-width: 1140px;
+        max-width: 1060px;
     }
 }
 
 @media (max-width: 1200px) {
     .container {
-        max-width: 960px;
+        max-width: 850px;
     }
 }
 
 @media (max-width: 992px) {
     .container {
-        max-width: 720px;
+        max-width: 700px;
     }
 }
 
@@ -62,17 +60,16 @@ p {
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0;
     }
 }
 
-@import 'blocks/title';
-@import 'blocks/buttons';
-@import 'blocks/promo';
-@import 'blocks/menu';
-@import 'blocks/about';
-@import 'blocks/use';
-@import 'blocks/projects';
+@import 'blocks/main';
+@import 'blocks/modal';
+@import 'blocks/education';
+@import 'blocks/skills';
+@import 'blocks/social';
 @import 'blocks/contact';
+@import 'blocks/course';
+@import 'blocks/project';
 @import 'blocks/policy';
-@import 'blocks/media';

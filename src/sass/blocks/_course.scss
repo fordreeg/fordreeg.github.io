@@ -1,0 +1,22 @@
+.main {
+   &__course {
+      margin-top: 20px;
+      &-list {
+         margin-top: 15px;
+         list-style: none;
+         font-style: italic;
+         @media (max-width: 992px) {
+            font-size: 14px;
+         }
+         @media (max-width: 768px) {
+            font-size: 13px;
+         }
+      }
+      &-data {
+         font-weight: 700;
+      }
+      &-university {
+         font-weight: 700;
+      }
+   }
+}
