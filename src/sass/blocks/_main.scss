@@ -102,7 +102,7 @@
         position: relative;
         padding-bottom: 40px;
         @media (max-width: 576px) {
-            padding: 0 10px 0;
+            padding: 0 10px 40px 10px;
         }
     }
     &__photo {
@@ -134,7 +134,7 @@
             display: block;
             height: 100px;
             width: 100px;
-            shape-outside: polygon(76% 11%,44% 14%,119% 38%,101% 48%,77% 95%,85% 96%,22% 99%,8% 6%,29% 5%);
+            shape-outside: polygon(88% 11%,44% 14%,119% 38%,101% 48%,77% 95%,85% 96%,22% 99%,8% 6%,29% 5%);
             float: left;
         }
         img {
