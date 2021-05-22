@@ -1,5 +1,5 @@
 .main {
-   &__course {
+   &__work {
       margin-top: 20px;
       &-list {
          margin-top: 15px;
@@ -13,9 +13,11 @@
          }
       }
       &-data {
+         margin-top: 15px;
          font-weight: 700;
       }
-      &-university {
+      &-job {
+         font-style: italic;
          font-weight: 700;
       }
    }
